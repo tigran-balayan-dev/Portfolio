@@ -1,0 +1,13 @@
+.demo:hover {
+  transition: 0.5s;
+  transform: scale(1.02);
+
+  .demoText {
+    transition: 0.2s;
+    color: var(--chakra-colors-text-white);
+  }
+  .demoIcon path {
+    transition: 0.2s;
+    stroke: var(--chakra-colors-text-white);
+  }
+}

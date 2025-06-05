@@ -7,7 +7,10 @@ const colors = {
       value: '#808EA3',
     },
     purple: {
-      value: 'var(--chakra-colors-purple-primary)',
+      value: 'var(--chakra-colors-background-purple)',
+    },
+    error: {
+      value: '#ff2424',
     },
   },
   background: {
@@ -19,9 +22,7 @@ const colors = {
         value: '#0f172a',
       },
     },
-  },
-  purple: {
-    primary: {
+    purple: {
       value: '#6366F1',
     },
   },
@@ -39,6 +40,15 @@ const spacing = {
   },
   xl: {
     value: '40px',
+  },
+  '2xl': {
+    value: '68px',
+  },
+  '3xl': {
+    value: '94px',
+  },
+  '4xl': {
+    value: '128px',
   },
 }
 

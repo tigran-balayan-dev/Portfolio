@@ -12,18 +12,24 @@ export const CustomContainer = ({
   ...rest
 }: CustomContainerProps) => {
   const maxWidths = {
-    desktopHeader: '1440px',
-    desktopContent: 'unset',
+    desktopHeader: '1280px',
+    desktopContent: '1020px',
   }
 
   const widths = {
     desktopHeader: {
-      mobile: 'calc(100% - 32px)',
-      desktop: 'calc(100% - 64px)',
+      desktop: 'calc(100% - 32px)',
+      laptop: 'calc(100% - 64px)',
+      tablet: 'calc(100% - 64px)',
+      mobile: 'calc(100% - 64px)',
+      base: 'calc(100% - 40px)',
     },
     desktopContent: {
-      mobile: 'calc(100% - 32px)',
-      desktop: 'calc(100% - 64px)',
+      desktop: 'calc(100% - 32px)',
+      laptop: 'calc(100% - 64px)',
+      tablet: 'calc(100% - 64px)',
+      mobile: 'calc(100% - 64px)',
+      base: 'calc(100% - 40px)',
     },
   }
 
