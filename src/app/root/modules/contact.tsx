@@ -25,7 +25,7 @@ export default function Contact() {
   const handleSubmitForm = handleSubmit(async (data) => {
     const res = await postContactForm(data)
 
-    if (res.success) {
+    if (res?.success) {
       scrollpoints.firstScreen.current?.scrollIntoView({ behavior: 'smooth' })
       toaster.create({
         title: `Email successfully sent!`,
@@ -67,8 +67,11 @@ export default function Contact() {
             may have.
           </ScrollAnimation>
           <Flex flexDir='column' gap='lg'>
-            <ScrollAnimation gap='md'>
-              <Link to='mailto:tigran.balayan.u@gmail.com'>
+            <Link
+              to='mailto:tigran.balayan.u@gmail.com'
+              style={{ width: 'fit-content' }}
+            >
+              <ScrollAnimation gap='md'>
                 <Flex
                   w='40px'
                   h='40px'
@@ -83,27 +86,24 @@ export default function Contact() {
                     color='var(--chakra-colors-text-white)'
                   />
                 </Flex>
-              </Link>
-              <Flex flexDir='column'>
-                <Link
-                  to='mailto:tigran.balayan.u@gmail.com'
-                  style={{ width: 'fit-content' }}
-                >
+
+                <Flex flexDir='column'>
                   <Text textStyle='text' color='text.white'>
                     Email
                   </Text>
-                </Link>
-                <Text textStyle='description' color='text.gray'>
-                  tigran.balayan.u@gmail.com
-                </Text>
-              </Flex>
-            </ScrollAnimation>
+                  <Text textStyle='description' color='text.gray'>
+                    tigran.balayan.u@gmail.com
+                  </Text>
+                </Flex>
+              </ScrollAnimation>
+            </Link>
 
-            <ScrollAnimation gap='md'>
-              <Link
-                to='https://www.linkedin.com/in/tigran-balayan-dev/'
-                target='_blank'
-              >
+            <Link
+              to='https://www.linkedin.com/in/tigran-balayan-dev/'
+              target='_blank'
+              style={{ width: 'fit-content' }}
+            >
+              <ScrollAnimation gap='md'>
                 <Flex
                   w='40px'
                   h='40px'
@@ -118,22 +118,17 @@ export default function Contact() {
                     color='var(--chakra-colors-text-white)'
                   />
                 </Flex>
-              </Link>
-              <Flex flexDir='column'>
-                <Link
-                  to='https://www.linkedin.com/in/tigran-balayan-dev/'
-                  target='_blank'
-                  style={{ width: 'fit-content' }}
-                >
+
+                <Flex flexDir='column'>
                   <Text textStyle='text' color='text.white'>
                     LinkedIn
                   </Text>
-                </Link>
-                <Text textStyle='description' color='text.gray'>
-                  @tigran-balayan-dev
-                </Text>
-              </Flex>
-            </ScrollAnimation>
+                  <Text textStyle='description' color='text.gray'>
+                    @tigran-balayan-dev
+                  </Text>
+                </Flex>
+              </ScrollAnimation>
+            </Link>
           </Flex>
         </Flex>
         <Flex flex='1' flexDir='column'>

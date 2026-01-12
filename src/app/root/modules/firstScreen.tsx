@@ -69,7 +69,7 @@ export default function FirstScreen() {
           color='text.gray'
           fontWeight='400'
         >
-          Over the last 4 years, I've actively built and scaled professional,
+          Over the last 5 years, I've actively built and scaled professional,
           complex frontend websites, collaborating closely with both frontend
           and backend teams.
         </ScrollAnimation>
